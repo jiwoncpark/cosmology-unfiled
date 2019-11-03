@@ -1,0 +1,29 @@
+@article{shajib2019strides,
+  title={STRIDES: A 3.9 per cent measurement of the Hubble constant from the strongly lensed system DES J0408-5354},
+  author={Shajib, AJ and Birrer, S and Treu, T and Agnello, A and Buckley-Geer, EJ and Chan, JHH and Christensen, L and Lemon, C and Lin, H and Millon, M and others},
+  journal={arXiv preprint arXiv:1910.06306},
+  year={2019},
+  url="http://adsabs.harvard.edu/abs/2019arXiv191006306S",
+}
+@article{joseph2019sparse,
+  title={Sparse Lens Inversion Technique (SLIT): lens and source separability from linear inversion of the source reconstruction problem},
+  author={Joseph, R and Courbin, F and Starck, J-L and Birrer, S},
+  journal={Astronomy \& Astrophysics},
+  volume={623},
+  pages={A14},
+  year={2019},
+  publisher={EDP Sciences},
+  url="https://www.aanda.org/articles/aa/pdf/2019/03/aa31042-17.pdf",
+  note={
+  Visit by Aymeric Galan, 11/01/2019.
+  - A signal (1D, 2D) is "sparse" if it's defined by very few coefficients in a given basis. For example, non-periodic, multiscale signals are sparse in wavelet space.
+  - Wavelet decomposition used for denoising. The choice of threshold to apply is a tricky one, as it can remove small substructures.
+  - Denoising and decomposing is equivalent to regularization on the pixels.
+  - Each galaxy (lens and source) is sparser in its own plane (in wavelets space).
+  - Future work pending for Aymeric:
+  1. Spectral information through multiband imaging (better lens/source deblending and faster algorithm)
+  2. Fully sparse modeling, i.e. SLIT applied to lens mass as well as lens, source light. This will improve stellar/DM substructures studies. 
+  - Anowar and Tommaso at UCLA have focused on real data whereas Martin and Aymeric at EPFL have focused on simulations. They plan to merge their codebases so that they can learn from one another's results.
+  - Velocity dispersion can be used as a model rejection criterion as well.
+  }
+}
