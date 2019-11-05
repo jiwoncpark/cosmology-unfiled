@@ -1,0 +1,29 @@
+@article{gilman2019probing,
+  title={Probing dark matter structure down to 107 solar masses: flux ratio statistics in gravitational lenses with line of sight halos},
+  author={Gilman, Daniel and Birrer, Simon and Treu, Tommaso and Nierenberg, Anna and Benson, Andrew},
+  journal={Monthly Notices of the Royal Astronomical Society},
+  year={2019},
+  url="https://arxiv.org/pdf/1901.11031.pdf",
+  note={
+  tl;dr We can differentiate between WDM and CDM using 50 quads by probing DM structure down to $10^8$ \smass.  
+  - CDM models predict abundance of low-mass halos and cuspy 1/r central density profiles. 
+  - In WDM models, DM particles diffuse in the early universe, wiping out density fluctuations smaller than a characteristic scale, which depends on the production mechanism of the WDM particle candidate. The result is a turnover in the halo mass function and an underabundance of small-scale structure at later times. 
+  - In self-interacting DM (SIDM) models, scattering between DM particles produces cored density profiles in individual halos. 
+  - In "fuzzy" DM models, the kpc-scale de Broglie wavelength of ultra-light DM particles results in QM phenomena on galactic scale, producing large soliton cores.
+  - Lyman-alpha forest constrains WDM. Large-scale and galaxy cluster probes constrain SIDM.
+  - Natural CDM particles haven't been detected. CDM models have neither the suppression of small-scale structure nor the cored density profiles, which agree with observations. "Small-Scale Crisis" of CDM.
+  - But we've been assuming covariance between baryonic astrophysics and DM physics. Uncertainties related to baryonic astrophysical processes can be larger than the differences between CDM, WDM, and SIDM. To isolate DM physics from sub-galactic astrophysics and differentiate between these DM models, we need to look to masses below 10^8 \smass, where subhalos don't have stars for CDM and don't exist for WDM.
+  - Magnification ratios between multiple images of unresolved sources are probes of small-scale structure near lensed images. This is possible b/c magnification of a lensed image is a function fo background source diameter. Narrow-line regions, which subtends angles on order mas, is unaffected by microlensing by stars while still being sensitive to mas perturbations sourced by DM halos above $10^6$ \smass.
+  %%%%%%%%%%%
+  Assumptions
+  %%%%%%%%%%%
+  - Density profiles of DM halos modeled as truncated NFW profiles. In the main lens plane, tidally truncate subhalos through a Roche limit approximation. In the LOS, truncate halos at the radius where the mean enclosed density if 50 times $\rho_{crit}$. 
+  - LOS substructure modeled using the mass function of Sheth and Torman plus a boost from the 2-halo term ($\xi_{2halo}$) that rescales the background density and amplitude of the halo mass function. This term accounts for the correlated structure near the main lens halo and results in a roughly 5-15% boost in the number of halos located closer to the main lens redshift. Rescaling factor $\delta_{los}$ introduced to account for theoretical uncertainty. Result is
+  $$\frac{d^2 N_{los}}{dmdV} = \delta_{los} (1 + \xi_{2halo}) \frac{d^2N}{dmdV}$$. LOS halos are distributed in a double-cone geometry with opening angle 3 times the Einstein radius of a lens and closing at the source redshift. Adding halos along LOS and specifying a flat cosmology introduces an artificial focusing of light rays. To counteract this, add negative convergence sheets along the LOS computed wrt the mean mass in DM halos rendered.
+  - Main deflector modeled using the projected number density per unit area, $\Sigma_{sub}$.
+  $$\frac{d^2 N_{los}}{dmdA} = \frac{\Sigma_{sub}}{m_0} \left(\frac{m}{m_0}\right)^\alpha F(M) H(z)$$,
+  where F and H encode dependence on the parent halo mass $M$ and redshift $z$.
+  - Multi-plane lensing! Number of halos along LOS often outnumber fht emain lens plane subhalos. Effect of LOS objects depend on (1) the geometry defined by teh lens and source redshifts resulting in different lensing efficiencies for different redshifts and (2) the coupling between deflections at different redshifts results in non-linear effects that impact the deflection angles. So define a metric for lensing surface mass density for multi-plane systems that encodes redshift-dependent lens planes: $\kappa_{eff} \equiv \frac{1}{2} \nabla \cdot \alpha$, where $\alpha$ is the deflection field of the lens system, i.e. the mapping from a coordinate on the sky to a position in source plane through multi-plane ray tracing.
+  - LOS halos contribute substantially to the signal in flux ratios, even dominating the signal in lens systems with higher lens and source redshifts.
+  }
+}
