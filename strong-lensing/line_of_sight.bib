@@ -3,7 +3,15 @@
   author={Sluse, D and Rusu, CE and Fassnacht, CD and Sonnenfeld, A and Richard, J and Auger, MW and Coccato, L and Wong, KC and Suyu, SH and Treu, T and others},
   journal={arXiv preprint arXiv:1905.08800},
   year={2019},
-  url="http://adsabs.harvard.edu/abs/2019MNRAS.490..613S"
+  url="http://adsabs.harvard.edu/abs/2019MNRAS.490..613S",
+  note={
+  - LOS results in a systematic error of a few \% on $H_0$
+  - Gemini and ESO-VLTs to measure spectroscopic redshifts of brightest galaxies toward the lens
+  - ESO-MUSE integral field spectrograph to measure velocity dispersion of lens and several nearby galaxies
+  - Photometric redshifts and stellar masses of all galaxies down to i < 23 mag
+  - "Flexion-shift" as a measure of the amplitude of gravitational perturbation. This is effectively comparing the shift of the solutions of the lens equation with/without including the flexion produced by the perturber, which may be a single galaxy or a galaxy group. If the flexion shift of a galaxy << observational precision on the position of the lensed images, we can ignore its perturbation on the gravitational potential of the main lens. 
+  -
+  }
 }
 @article{greene2013improving,
   title={Improving the precision of time-delay cosmography with observations of galaxies along the line of sight},
@@ -14,7 +22,20 @@
   pages={39},
   year={2013},
   publisher={IOP Publishing},
-  url="https://ui.adsabs.harvard.edu/abs/2013ApJ...768...39G/abstract"
+  url="https://ui.adsabs.harvard.edu/abs/2013ApJ...768...39G/abstract",
+  note={
+  - Requiring the surface mass density of main deflector to vanish at large distances from its center is equivalent to assuming that LOS mass distribution excluding the plane of the main deflector is uniform and equal to the average of the Universe.
+  - $\kappa_{ext} < 0$ if LOS is underdense wrt the average of the Universe.
+  - B1608-656 had time delays known to 2\% and the mass model of the main deflector and immediate environment constrained by data. So $\kappa_{ext}$ error dominated the erroor budget. $D_{\Delta t} \propto (1 - \kappa_{ext})^{-1}$
+  - Suyu et al (2010) used the density of galaxies within 45" of B1608-656, measured to be twice that of an average field observed at the same depth. They then selected the LOS with the same galaxy overdensity in the Millennium ray-tracing simulations to measure the conditional PDF $p(\kappa_{ext}|\zi_{gal})$ then used as a prior in deriving cosmological information.
+  - Can compare output of cosmological numerical simulations with observables in a galaxy photometric catalog. Define the relative overdensity as the value of selected observables related to the stellar mass, redshift, and projected distance on the sky (angular distance) divided by the mean of the same observables over all LOS.
+  - Collett et al 2013 used a halo-model approach to fully reconstruct mass distribution along LOS.
+  %%%%%%%%%
+  This work
+  %%%%%%%%%
+  - 64 simulated fields of 4 x 4 deg^2 from the Millennium Simulation containing galaxies with positions, redshifts, magnitudes (SDSS ugriz and 2MASS JHK) and stellar masses from the semianalytic galaxy model. Each field has 5M galaxies with redshifts up to 3.2 and associated map of external convergence on a 4096 by 4096 grid for a source redshift of 1.4. Each position on the external convergence map is a line of sight and so there are $4096 \times 4096 \sim 10^9$ LOS for the 64 fields.
+  - Distribution of external convergence from strong lens lines of sight are very similar to the distribution for all lines of sight.
+  }
 }
 @article{rusu2017h0licow,
   title={H0LiCOW--III. Quantifying the effect of mass along the line of sight to the gravitational lens HE 0435- 1223 through weighted galaxy counts},
